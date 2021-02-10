@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Your Name"
-date: "Fall 2020"
+author: "Amy Estrada"
+date: "Spring 2021"
 output: html_document
 ---
 
@@ -35,9 +35,18 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+This box plot shows the seating placement with the amount of alcohol consumption.
+
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+People that sit in the back drink three times as much alcohol than then the people from the middle or from the front by a greater amount.
+
 ## Inferential Tests
+
 
 ## Conclusions
 
